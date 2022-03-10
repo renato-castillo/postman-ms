@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "5d9bef76-78d9-4785-b2af-eb51c81cd655",
+		"name": "Personal Accounts MS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/personalaccounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"personalaccounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get By Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/personalaccounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"personalaccounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"CUENTA PLAZO FIJO\",\r\n    \"maintenanceCommission\": 0.0,\r\n    \"maxMonthlyMovements\": 0,\r\n    \"uniqueMovementDay\": 20,\r\n    \"maxPerClient\": 1\r\n}\r\n\r\n/*\r\n{\r\n    \"name\": \"CUENTA AHORROS\",\r\n    \"maintenanceCommission\": 0.0,\r\n    \"maxMonthlyMovements\": 5,\r\n    \"maxPerClient\": 1\r\n}\r\n\r\n{\r\n    \"name\": \"CUENTA CORRIENTE\",\r\n    \"maintenanceCommission\": 5.0,\r\n    \"maxPerClient\": 1\r\n}\r\n\r\n{\r\n    \"name\": \"CUENTA PLAZO FIJO\",\r\n    \"maintenanceCommission\": 0.0,\r\n    \"maxMonthlyMovements\": 0,\r\n    \"uniqueMovementDay\": 20,\r\n    \"maxPerClient\": 1\r\n}\r\n\r\n\r\n*/",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/personalaccounts/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"personalaccounts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"hola\",\r\n    \"name\": \"CUENTA PLAZO FIJO FIJO\",\r\n    \"maintenanceCommission\": 0.0,\r\n    \"maxMonthlyMovements\": 0,\r\n    \"uniqueMovementDay\": 20,\r\n    \"maxPerClient\": 1\r\n}\r\n\r\n/*\r\n{\r\n    \"name\": \"CUENTA AHORROS\",\r\n    \"maintenanceCommission\": 0.0,\r\n    \"maxMonthlyMovements\": 5,\r\n    \"maxPerClient\": 1\r\n}\r\n\r\n{\r\n    \"name\": \"CUENTA CORRIENTE\",\r\n    \"maintenanceCommission\": 5.0,\r\n    \"maxPerClient\": 1\r\n}\r\n\r\n{\r\n    \"name\": \"CUENTA PLAZO FIJO\",\r\n    \"maintenanceCommission\": 0.0,\r\n    \"maxMonthlyMovements\": 0,\r\n    \"uniqueMovementDay\": 20,\r\n    \"maxPerClient\": 1\r\n}\r\n\r\n\r\n*/",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/personalaccounts/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"personalaccounts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"hola\"\r\n}\r\n\r\n/*\r\n{\r\n    \"name\": \"CUENTA AHORROS\",\r\n    \"maintenanceCommission\": 0.0,\r\n    \"maxMonthlyMovements\": 5,\r\n    \"maxPerClient\": 1\r\n}\r\n\r\n{\r\n    \"name\": \"CUENTA CORRIENTE\",\r\n    \"maintenanceCommission\": 5.0,\r\n    \"maxPerClient\": 1\r\n}\r\n\r\n{\r\n    \"name\": \"CUENTA PLAZO FIJO\",\r\n    \"maintenanceCommission\": 0.0,\r\n    \"maxMonthlyMovements\": 0,\r\n    \"uniqueMovementDay\": 20,\r\n    \"maxPerClient\": 1\r\n}\r\n\r\n\r\n*/",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/personalaccounts/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"personalaccounts",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
